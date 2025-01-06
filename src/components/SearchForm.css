@@ -1,0 +1,15 @@
+.react-datepicker-popper {
+    z-index: 9999 !important; /* High z-index to ensure visibility */
+}
+
+.react-datepicker-wrapper,
+.react-datepicker {
+    overflow: visible !important;
+}
+
+.datepicker-wrapper {
+    display: block; 
+    margin-top: 5px;
+}
+
+

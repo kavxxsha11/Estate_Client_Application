@@ -1,0 +1,24 @@
+/* src/components/Favourites.css */
+.favourites-container {
+    background-color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Scrollbar styling for better UX */
+  .favourites-container::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .favourites-container::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  
+  .favourites-container::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 4px;
+  }
+  
+  .favourites-container::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  

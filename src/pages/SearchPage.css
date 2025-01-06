@@ -1,0 +1,136 @@
+
+.dropdown-menu {
+    z-index: 9999; 
+    position: absolute; 
+  }
+  
+
+  .thumbnail-image {
+    z-index: 1; 
+    position: relative; 
+  }
+  
+  
+.property-description {
+    margin-top: 2rem;
+  }
+.container {
+    position: relative; /* Create a stacking context for children */
+    z-index: 0; /* Neutral base level */
+    overflow: visible;
+  }
+
+
+
+.hero-section {
+    height: 60vh;
+   
+    background-image: url('../../public/images/backgroundImage.png'); 
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+  }
+  
+  .hero-section > div {
+    position: relative;
+    z-index: 1;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-section {
+      height: 40vh;
+    }
+  }
+  
+  
+  @media (min-width: 992px) {
+    .favourites-container {
+      position: sticky;
+      top: 80px;
+    }
+  }
+  
+
+  .search-page .container {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+  
+  
+  .search-page .container > .row {
+    width: 100%;
+  }
+  
+  
+  
+  /* 7. Responsive Adjustments for Smaller Screens */
+  @media (max-width: 991.98px) {
+    .favourites-container {
+      position: relative;
+      top: 0;
+    }
+  }
+  
+  /* Form Field Alignment Enhancements */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group .form-label {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .form-group .form-control,
+  .form-group .react-select__control {
+    height: 38px;
+  }
+  
+  /* Adjusting the DatePicker input to match form control */
+  .react-datepicker-wrapper,
+  .react-datepicker__input-container {
+    width: 100%;
+  }
+  
+  .react-datepicker__input-container input {
+    width: 100%;
+    height: 38px;
+    padding: 0.375rem 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+  }
+  
+  /* Smooth Scrolling for In-Page Navigation */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+
+  
+  /* putting search form and property listings have consistent margins */
+  .search-page .container > .row > .col-lg-9 {
+    margin-left: 0;
+  }
+  
+  /* Adjusted the search form card for better visual appeal */
+  .search-page .container > .row > .col-lg-9 .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-page .container > .row > .col-lg-9 .card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease;
+  }
+  

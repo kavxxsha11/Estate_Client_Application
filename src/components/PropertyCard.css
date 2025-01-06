@@ -1,0 +1,22 @@
+.property-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .property-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: red;
+    font-size: 1.5rem;
+    z-index: 10;
+  }
+  
+  .heart-icon:hover {
+    color: darkred;
+  }
+  
